@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jinja Conditionals</title>
+    <style>
+        *{
+            background-color: black;
+            color: white;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <marquee behavior="scroll" scrollamount="20" width="50%">
+            <h1 style="color:red">Jinja Operational Tags - Conditional statements</h1>
+            <h1></h1>
+        </marquee>
+
+        <h1>if condition using jinja operational tags</h1>
+        {% if a > 18 %}
+            <h1>{{a}}(a) is greater than 18</h1>
+        {% endif %}
+
+        <h1>if-else condition using jinja operational tags</h1>
+        {% if a > b %}
+            <h1>{{a}}(a) is greater than {{b}}(b)</h1>
+        {% else %}
+            <h1>{{b}}(b) is greater than {{a}}(a)</h1>
+        {% endif %}
+    </center>
+</body>
+</html>
